@@ -271,8 +271,4 @@ jobs:
 └─ pom.xml
 ```
 
-## Licencia
-MIT (o la que elijas).
-
----
-Autor: AlsovCR2 — Proyecto educativo para reforzar integración de pagos, pruebas, Docker y CI/CD en Java Backend.
+Autor: AlsovCR2 — Proyecto personal para reforzar integración de pagos, pruebas, Docker y CI/CD en Java Backend.
