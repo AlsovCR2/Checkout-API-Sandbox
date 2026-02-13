@@ -1,0 +1,29 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: Checkout-api-sandbox
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/app}
+    username: ${SPRING_DATASOURCE_USERNAME:app}
+    password: ${SPRING_DATASOURCE_PASSWORD:app}
+    jpa:
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: true
+      open-in-view: false
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health,info,metrics
+
+  stripe:
+    apiKey: ${STRIPE_API_KEY:}
+    webhookSecret: ${STRIPE_WEBHOOK_SECRET:}
+
